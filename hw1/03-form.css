@@ -7,3 +7,54 @@
 body {
   background-color: var(--teal);
 }
+
+div {
+  background-color: white;
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+}
+
+fieldset {
+  border: 0px;
+}
+
+h1#title {
+  text-align: center;
+  color: teal;
+  padding: 3%;
+}
+
+label {
+  font-weight: bold;
+}
+
+input:nth-child(-n + 8) { /*not sure why it's 17, but that's what made it work*/
+  width: 95%;
+}
+
+textarea#q1 {
+  width: 95%;
+  height: 120px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+}
+
+input[type=submit], [type=reset] {
+  width: 47%;
+  padding: 2% 19%;
+  cursor: pointer;
+}
+
+input#submit {
+  background-color: teal;
+  color: white;
+  border: 1px solid black;
+}
+
+input#submit:hover {
+  background-color: white;
+  color: #0173a0;
+}

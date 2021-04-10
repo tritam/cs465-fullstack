@@ -13,6 +13,24 @@
       <form action="">
         <!-- 03 - Form Exercise -->
         <!-- Add your code below -->
+        <div>
+          <h1 id="title">CONTACT FORM</h1>
+          <form action="/submit" method="post">
+            <fieldset>
+              <label for="name"><span style="color:gray">Name</span> <span style="color:#00c295">(required)</span></label><br/>
+              <input id="name" name="name" required/><br/><br/>
+              <label for="email"><span style="color:gray">Email</span> <span style="color: #00c295">(required)</span></label><br/>
+              <input id="email" name="email" type="email" required/><br/><br/>
+    
+              <label for="q1"><span style="color:gray">Anything else?</span></label><br/>
+              <textarea id="q1" name="q1" rows="10" cols="70"></textarea><br/><br/>
+
+              <input name="q2" type="checkbox" /> Sign up for the newsletter<br/><br/>
+
+              <input type="submit" id="submit" name="submit" value="Submit"/>
+            </fieldset>
+          </form>
+        </div>
       </form>
     </main>
   </body>
