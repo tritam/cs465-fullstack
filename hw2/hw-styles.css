@@ -1,0 +1,162 @@
+h1 {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/* Code for exercise 01-flex */
+/*
+.flex-item {
+  width: 200px;
+  height: 100px;
+  margin: 1px;
+  padding: 10px;
+  background-color: purple;
+  color: white;
+  text-align: center;
+}
+
+.flex-container {
+  height: 400px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  flex-direction: row;
+}
+*/
+
+/* Code for exercise 02-flex */
+/*
+.flex-item {
+  width: 20 0px;
+  height: 100px;
+  margin: 1px;
+  padding: 10px;
+  background-color: purple;
+  color: white;
+  text-align: center;
+}
+
+.flex-container {
+  height: 400px;
+  display: flex;
+  flex-flow: column wrap-reverse;
+  align-content: space-between;
+  flex-direction: column-reverse;
+}
+
+.item1 {
+  order: 10;
+}
+
+.item2 {
+  order: 1;
+}
+
+.item3 {
+  order: 2;
+}
+
+.item4 {
+  order: 3;
+}
+
+.item5 {
+  order: 4;
+}
+
+.item6 {
+  order: 5;
+}
+
+.item7 {
+  order: 6;
+}
+
+.item8 {
+  order: 7;
+}
+
+.item9 {
+  order: 8;
+}
+
+.item10 {
+  order: 9;
+}
+*/
+
+/* Code for exercise 03-grid */
+/*.grid-item {
+  padding: 10px;
+  background-color: purple;
+  color: white;
+  text-align: center;
+}
+
+div {
+  min-height: 120px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1px;
+}
+
+.grid-item5 {
+  grid-column: span 3;
+  grid-row: span 2;
+  order: -1;
+}
+
+.grid-item7 {
+  grid-column: span 4;
+}
+
+.grid-item9 {
+  grid-column: span 3;
+}
+*/
+
+/* Code for exercise 04-bootstrap-grid */
+.row > div[class^='col'] {
+  height: 100px;
+  padding: 10px;
+  border: 1px solid white;
+  color: white;
+}
+
+/* Background colors used:
+- purple
+- navy
+- teal
+- darkgreen */
+
+/* Add your code here */
+#row1 {
+  background-color: navy;
+}
+
+#row2 {
+  background-color: purple;
+}
+
+#row3 {
+  background-color: violet;
+}
+
+#row4 {
+  background-color: teal;
+}
+
+#row4-orange {
+  background-color: orangered;
+}
+
+#row5 {
+  background-color: darkgreen;
+}
+
+/* Code for exercise 05-bootstrap-form */
