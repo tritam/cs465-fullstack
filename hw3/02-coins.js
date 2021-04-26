@@ -5,7 +5,7 @@ let calculateChange = (input) => {
   var countD = 0, countQ = 0, countDi = 0, countN = 0, countC = 0;
 
   if(input > 10) {
-    console.log("$"+input+" ==> "+"Error: the number is too large");
+    console.log("$" + input + " ==> "+"Error: the number is too large");
   }
   else {
     // count the coins
