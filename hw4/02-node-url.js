@@ -33,6 +33,13 @@ const server = http.createServer((req, res) => {
   }
 
   // Add your code here
+  else if () {
+
+  }
+
+  else {
+    
+  }
 
   res.end();
 });
