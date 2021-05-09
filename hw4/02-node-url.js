@@ -33,12 +33,24 @@ const server = http.createServer((req, res) => {
   }
 
   // Add your code here
-  else if () {
-
+  else if (req.url === url.pathname + url.search) {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    const params = new URLSearchParams(url.search);
+    for(var param of params.entries()) {
+      res.write(
+        `<table style='border:1px solid black;'>
+          <tr'>
+            <td style='border:1px solid black;'>`+param[0]+`</td>
+            <td style='border:1px solid black;'>`+param[1]+`</td>
+          </tr>
+        </table>`
+      );
+    }
   }
 
   else {
-    
+    res.writeHead(404, { 'Content-Type': 'text/plain' });
+    res.write(`<h1>404: Page not found</h1>`);
   }
 
   res.end();

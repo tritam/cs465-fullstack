@@ -40,9 +40,40 @@ app.get('/', (req, res) => {
   res.end();
 });
 
-app.get('/welcome', (req, res) => {});
+app.get('/welcome', (req, res) => {
+  res.status(202);
+  res.send('Welcome');
+});
+
+app.get('/redirect', (req, res) => {
+  res.status(302);
+  res.redirect('/redirected');
+});
+
+app.get('/redirected', (req, res) => {
+  res.status(404);
+  res.send('404: Redirected page');
+});
+
+app.get('/cache', (req, res) => {
+  res.header({ 'Cache-Control':'max-age=86400', 'Content-Type':'text/plain' });
+  res.send('this resource was cached');
+});
+
+app.get('/cookie', (req, res) => {
+  res.header({ 'Set-Cookie':'hello=world', 'Content-Type': 'text/plain' });
+  res.send('cookies... yummm');
+});
+
+app.get('/other', (req, res) => { // '/*' wildcard didn't work?
+  res.status(404);
+  res.set('404: Page not found');
+});
+
+
 
 // Add your code here
+
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
